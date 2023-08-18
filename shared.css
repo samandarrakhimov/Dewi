@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: aliceblue;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.margin{
+    margin-top: 50px;
+}
+.border{
+    border: 1px solid black;
+}
+.optimaze{
+    margin-top: 50px;
+    /* padding: 10px 0 ; */
+}
+.rgba {
+    width: 100%;
+    height: 100%;
+    z-index:0;
+    background: rgba(13, 20, 26, 0.7);
+}
+.btn{
+    padding: 15px 45px;
+    border-radius: 4px;
+    outline: none;
+    border: 0;
+    
+}
+.select{
+    display: none;
+}
+.dropdown:hover .select::after{
+ display: block;
+ bottom: 0;
+ left: 0;
+ right: 0;
+}
+.nav-item_active{
+    margin-top: 15px;
+    background-color: orangered;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+    height: 100px;
+   
+}
+.nav-item_active a{
+    color: #fff;
+}
+.nav-item_active a:hover{
+    color: #fff;
+}
+.none{
+    display: none;
+}
+.section-title{
+    color: #365870;
+    font-size: 17px;
+   margin-top: 100px;
+   text-transform: uppercase;
+}
+.section-title::after{
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #ff8664;
+    margin: 4px 10px;
+}
+.section-subtitle{
+    font-size: 42px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.portfolio_active{
+    background-color: orange;
+    color: #fff;
+}
+.a{
+    left: 200px !important;
+}
+.portfolio_active2{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 800px;
+    /* margin: 6px auto; */
+}
+.app{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: inherit;
+    margin: 10px;
+}
+.card{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: inherit;
+    /* margin: 10px; */
+
+}
+.a2{
+    left: 280px !important;
+    margin: 0;
+}
+.fa-caret-down{
+    transform: rotate(-90deg);
+    color: red;
+}
+.fd{
+    transform: rotate(0);
+    margin-left: 5px;
+    font-size: 17px;
+    color: white;
+}
+.fdd{
+    margin-left: 20px;
+    color: black;
+}
+.scroltoTopBtn{
+    position: fixed;
+    right: 0;
+   background-color: crimson;
+   color: #fff;
+   bottom: 10px;
+   height: 45px;
+   font-size: 22px;
+   line-height: 45px;
+   border-radius: 4px;
+   cursor: pointer;
+   z-index: 1000;
+   width: 45px;
+   text-align: center;
+   opacity: 0;
+}
+.active{
+    opacity: 1;
+    transition: 0.4s ease;
+    right: 20px;
+}
+.reveal{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1.3s ease;
+}
+.actives{
+    transform: translateY(0);
+    opacity: 1;
+
+}
+.main{
+    margin-top: 200px;
+}
+
